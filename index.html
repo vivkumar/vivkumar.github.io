@@ -113,6 +113,14 @@ else obj.style.display = "block";
 	<h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="publications"> Publications </a></span></h1>
 
 	<ul>
+	<li><p> V. Kumar, M. Grossman, H. Shan and V. Sarkar, "<i><b>Scaling HabaneroUPC++ on Heterogenous Supercomputers</b></i>", at The 9th International Conference on Partitioned Global Address Space Programming Models, <a href="http://hpcl.seas.gwu.edu/pgas15/" target="_blank">PGAS 2015</a>, (poster accepted with extended abstract), Washington, D.C., September 2015. [<a href="javascript: void(0);" onClick="toggle('p8')">abstract</a>]
+	<div id="p8" style="display:none;"><i> <p>Accelerators/co-processors have made their way into supercomputing systems. These modern heterogeneous systems features multiple layers of memory hierarchies, and produce a high degree of thread-level parallelism. To ensure that current and future applications perform well on these systems, it is important that users be able to cleanly express the various types of parallelism found in their applications while trusting that expertly-implemented runtime libraries will schedule this parallelism in a way that efficiently utilizes the memory hierarchies and computational resources of their system.</p>
+
+	<p> In this poster we present our work-in-progress, a distributed, heterogeneous programming model in HabaneroUPC++, which aims to target distributed, heterogeneous systems with multi-layered memory hierarchies through a distributed data-driven programming model that integrates all memory layers together through data-flow programming.
+	</p></i></li>
+        </ul>
+
+	<ul>
 	<li><p> V. Kumar, A. Sbirlea, Z. Budimlic, D. Majeti and V. Sarkar, "<i><b>Heterogeneous Work-stealing across CPU and DSP cores</b></i>", at The 19th International Conference on High Performance Extreme Computing Conference, <a href="http://ieee-hpec.org/index.htm" target="_blank">HPEC 2015</a>, Waltham, MA, USA, September 2015 (to appear). [<a href="javascript: void(0);" onClick="toggle('p7')">abstract</a>, <a href="./papers/kumar_hpec2015.pdf">paper</a>] 
 	<div id="p7" style="display:none;"><i> <p>Due to the increasing power constraints and higher and higher performance demands, many vendors have shifted their focus from designing high-performance computer nodes using powerful multicore general-purpose CPUs, to nodes containing a smaller number of general-purpose CPUs aided by a larger number of more power-efficient special purpose processing units, such as GPUs, FPGAs or DSPs. While offering a lower power-to-performance ratio, unfortunately, such heterogeneous systems are notoriously hard to program, forcing the users to resort to lower-level direct programming of the special purpose processors and manually managing data transfer and synchronization between the parts of the program running on general-purpose CPUs and on special-purpose processors.</p>
 
