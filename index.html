@@ -111,7 +111,7 @@ else obj.style.display = "block";
 
         <div class="contentText"> 
 	<h2><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="publications"> Publications </a></span></h2>
-
+	<br>
 	<h1><span style="color: #78582E; padding-top:8px; font-size:18px; font-weight:bold; letter-spacing:-1px; "> Conferences </span></h1>
 	
 	<ul>
@@ -136,7 +136,7 @@ else obj.style.display = "block";
 	</p></i></li>
 	</ul>
 	<ul>
-	<li><p> V. Kumar, D. Frampton, S. M. Blackburn, D. Grove, and O. Tardieu, "<i><b>Work-Stealing Without The Baggage</b></i>," in Proceedings of the 2012 ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages & Applications (<a href="http://splashcon.org/2012/program/oopsla-research-papers">OOPSLA 2012</a>), Tucson, AZ, October 19-26, 2012, 2012. [<a href="javascript: void(0);" onClick="toggle('p2')">abstract</a>, <a href="./papers/ws-oopsla-2012-1.pdf">paper</a>, <a href="./papers/oopsla2012.pdf">slides</a>, <a href="./talk/oopsla2012talk.m4a" target="_blank"><img src="./sound.png" width="25" height="25" alt="Talk" /></a>, <a href="http://cs.anu.edu.au/~vivek/ws-oopsla-2012/" target="_blank"> benchmarks </a>] 
+	<li><p> V. Kumar, D. Frampton, S. M. Blackburn, D. Grove, and O. Tardieu, "<i><b>Work-Stealing Without The Baggage</b></i>," in Proceedings of the 2012 ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages & Applications (<a href="http://splashcon.org/2012/program/oopsla-research-papers">OOPSLA 2012</a>), Tucson, AZ, October 19-26, 2012, 2012. (</a> <b>selected for <a href="http://www.sigplan.org/Newsletters/CACM/Papers" target="_blank">SIGPLAN Communications of ACM Research Highlights</a>, 2013</b>) [<a href="javascript: void(0);" onClick="toggle('p2')">abstract</a>, <a href="./papers/ws-oopsla-2012-1.pdf">paper</a>, <a href="./papers/oopsla2012.pdf">slides</a>, <a href="./talk/oopsla2012talk.m4a" target="_blank"><img src="./sound.png" width="25" height="25" alt="Talk" /></a>, <a href="http://cs.anu.edu.au/~vivek/ws-oopsla-2012/" target="_blank"> benchmarks </a>] 
 	<div id="p2" style="display:none;"><i> <p> Work-stealing is a promising approach for effectively exploiting software parallelism on parallel hardware. A programmer who uses work-stealing explicitly identifies potential parallelism and the runtime then schedules work, keep- ing otherwise idle hardware busy while relieving overloaded hardware of its burden. Prior work has demonstrated that work-stealing is very effective in practice. However, work- stealing comes with a substantial overhead: as much as 2× to 12× slowdown over orthodox sequential code.</p>
 <p>In this paper we identify the key sources of overhead in work-stealing schedulers and present two significant refinements to their implementation. We evaluate our work- stealing designs using a range of benchmarks, four different work-stealing implementations, including the popular fork-join framework, and a range of architectures. On these benchmarks, compared to orthodox sequential Java, our fastest design has an overhead of just 15%. By contrast, fork-join has a 2.3× overhead and the previous implementation of the system we use has an overhead of 4.1×. These results and our insight into the sources of overhead for work- stealing implementations give further hope to an already promising technique for exploiting increasingly available hardware parallelism.</p>
   </i></div></p></li>
