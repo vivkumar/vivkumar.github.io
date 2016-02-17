@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style2.css" />
 
-<title>Java Try-Catch Work-Stealing Framework</title>
+<title>AtomicSet for Java Work-Stealing Framework</title>
 </head>
 
 <body>
@@ -13,11 +13,43 @@
 <br>
 
 <div id="page">
-	Java TryCatch Work-Stealing Framework
+	AtomicSet for Java Work-Stealing Framework (AJWS)
 </div>
+
+<p>
+<h4>
+Today, parallelism is replacing the traditional clock frequency scaling as the foundation for increased compute capacity. Unfortunately, software parallelism is often difficult to identify and expose, which means it is often hard to realize the performance potential of modern processors. Common programming models using threads impose significant complexity to organize code into multiple threads of control and to manage the balance of work amongst threads to ensure good utilization of multiple cores.
+</p>
+
+<p>
+Much research has been focused on developing programming models in which programmers simply annotate portions of work that may be done concurrently and allow the system to determine how the work can be executed efficiently and correctly [1].
+</p>
+
+<p>
+Further, to ensure the correctness of parallel program, it is important that threads of execution do not interfere with each other while sharing data in the memory (data-race). Atomic Sets for Java (AJ) introduced a data-centric approach for synchronization [2]. Here, the user simply groups fields of objects into atomic sets to specify that these objects must always be updated atomically. However, there is no open-sourced implementation of AJ [3].
+</p>
+
+<p>
+AJWS is a new open-srouced system that draws together the benefits of work-stealing and AJ, allowing the application programmer to conveniently and succinctly expose the parallelism inherent in their Java program. We have implemented AJWS by using JastAdd [4] meta-compilation system.
+</p>
+
+<p>
+AJWS source code and sample testcases are available at github for <a href="https://github.com/vivkumar/ajws">download</a>.
+</p>
 
 <br>
 <br>
+
+<p>
+[1] http://vivkumar.github.io/javatrycatchws.html
+<br>
+[2] http://www.franktip.org/pubs/toplas2012.pdf
+<br>
+[3] https://www.cs.purdue.edu/sss/projects/aj/
+<br>
+[4] http://jastadd.org/web/
+</p>
+
 <br>
 <br>
 
