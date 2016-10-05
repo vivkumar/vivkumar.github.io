@@ -91,16 +91,27 @@ else obj.style.display = "block";
         <div class="contentText">
 	    <h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="news"> News </a></span></h1>
             <ul>
-                <li><p align="right"><span class="STYLE2">[July 2016]: Paper acceptance at <a href="http://www.csm.ornl.gov/workshops/openshmem2016/" target="_blank">OpenSHMEM 2016</a>, <a href="http://pppj16.inf.usi.ch/pppj" target="_blank">PPPJ 2016</a>.</span></p></li>
-                <!-- <li><p align="right"><span class="STYLE2">[June 2015]: Paper acceptance at <a href="http://ieee-hpec.org/cfp.htm" target="_blank">HPEC 2015</a>.</span></p></li> -->
-                <!-- <li><p align="right"><span class="STYLE2">[September 2014]: Paper acceptance at <a href="http://nic.uoregon.edu/pgas14/index.php" target="_blank">PGAS 2014</a>.</span></p></li> -->
-                <!-- <li><p align="right"><span class="STYLE2">[August 2014]: Habanero-UPC++, the software implementation our recent work at Rice University, is now available <a href="http://habanero-rice.github.io/habanero-upc/">online</a>. </span></p></li> -->
-                <li><p align="right"><span class="STYLE2">[April 2014]: Started working at Rice university as a Research Scientist.</span></p></li>
-                <li><p align="right"><span class="STYLE2">[January 2014]: Submitted my PhD thesis.</span></p></li>
-                <!-- <li><p align="right"><span class="STYLE2">[January 2014]: Paper acceptance at <a href="http://vee2014.cs.technion.ac.il/" target="_blank">VEE 2014</a>.</span></p></li> -->
-                <!-- <li><p align="right"><span class="STYLE2">[August 2013]: Acceptance at <a href="http://sc13.supercomputing.org/content/overview" target="_blank">SC 2013</a> Dissertation Research Showcase track for Ph.D. students.</span></p></li> -->
-		<li><p align="right"><span class="STYLE2">[July 2013]: The software implementation of our OOPSLA 2012 paper is now available online. Details are available <a href="http://vivkumar.github.io/javatrycatchws.html" target="_blank">here</a>.</span></p></li>
-                <li><p align="right"><span class="STYLE2">[May 2013]: Our OOPSLA 2012 <a href="#publications">paper</a> got selected for <a href="http://www.sigplan.org/Newsletters/CACM/Papers" target="_blank">SIGPLAN Communications of ACM Research Highlights</a> for 2013.</span></p></li>
+                <li><p align="right"><span class="STYLE2">[2016]: 
+		 Paper in <a href="http://www.csm.ornl.gov/workshops/openshmem2016/" target="_blank">OpenSHMEM 2016</a>, <a href="http://pppj16.inf.usi.ch/pppj" target="_blank">PPPJ 2016</a>, <a href="http://hpc.pnl.gov/IA3/IA3/Call_For_Papers.html"  target="_blank">IA^3</a>
+		</span></p></li>
+
+                <li><p align="right"><span class="STYLE2">[2015]: Paper in <a href="http://ieee-hpec.org/cfp.htm" target="_blank">HPEC 2015</a>, <a href="http://hpcl.seas.gwu.edu/pgas15/" target="_blank">PGAS 2015</a>
+		</span></p></li>
+
+                <li><p align="right"><span class="STYLE2">[2014]: 
+		<ul>
+		<li> Started working at Rice university as a Research Scientist </li>
+		<li> Submitted my PhD thesis </li>
+		<li> Paper in <a href="http://vee2014.cs.technion.ac.il/" target="_blank">VEE 2014</a>, <a href="http://nic.uoregon.edu/pgas14/index.php" target="_blank">PGAS 2014</a> </li>
+		</ul>
+		</span></p></li>
+
+                <li><p align="right"><span class="STYLE2">[2013]: 
+		<ul>
+		<li>OOPSLA 2012 <a href="#publications">paper</a> selected for <a href="http://www.sigplan.org/Newsletters/CACM/Papers" target="_blank">SIGPLAN Communications of ACM Research Highlights</a> </li> 
+		<li> PhD research accepted for Dissertation Research Showcase track at <a href="http://sc13.supercomputing.org/content/overview" target="_blank">SC 2013</a>. </li>
+		</span></p></li>
+
             </ul>
 	</div>
 	<br>
@@ -122,6 +133,18 @@ else obj.style.display = "block";
 	<h1><span style="color: #78582E; padding-top:8px; font-size:18px; font-weight:bold; letter-spacing:-1px; "> Refereed Conferences / Workshops </span></h1>
 	
 	<ul>
+	<li><p> V. Kumar, K. Murthy, V. Sarkar, and Y. Zheng, "<i><b>Optimized Distributed Work-Stealing</b></i>", in Proceedings of the 6th International Workshop on Irregular Applications: Architectures and Algorithms, <a href="http://hpc.pnl.gov/IA3/IA3/Call_For_Papers.html"  target="_blank">IA^3</a>, ACM, Salt Lake City, Utah, USA, November 2016. [<a href="javascript: void(0);" onClick="toggle('p11')">abstract</a>] 
+	<div id="p11" style="display:none;"><i><p>
+
+	Work-stealing is a popular approach for dynamic load balancing of task-parallel programs. However, as has been widely studied, the use of classical work-stealing algorithms on massively parallel and distributed supercomputers introduces several performance issues. One such issue is the overhead of failed steals (communicating with a victim that has no work), which is far more severe in the distributed context than within a single SMP node. Due to the cost of inter node communication, it is critical to reduce the number of failed steals in a distributed context. Prior work has demonstrated that load-aware victim processor selection can reduce the number of failed steals, but not eliminate the failed steals completely.
+	</p> <p>
+
+In this paper, we present two different load-aware implementations of distributed work-stealing algorithm in HabaneroUPC++ PGAS library - BaselineWS and SuccessOnlyWS. BaselineWS follows prior work in implementing a load-aware distributed work-stealing strategy. SuccessOnlyWS implements a novel load- aware distributed work-stealing strategy that overcomes failed attempts by introducing a new policy for moving work from busy to idle processors. In contrast to BaselineWS, SuccessOnlyWS also avoids querying the same processor multiple times with failed steals.We evaluate both BaselineWS and SuccessOnlyWS by using up to 12288 cores of Edison, a CRAY-XC30 supercomputer and by using dynamic irregular applications, as exemplified by the UTS and NQueens benchmarks. We demonstrate that SuccessOnlyWS provides performance improvements up to 7% over BaselineWS.	
+
+	</p></i></li>
+        </ul>
+	
+        <ul>
 	<li><p> V. Kumar, J. Dolby, and S. M. Blackburn, "<i><b>Integrating Asynchronous Task Parallelism and Data-centric Atomicity</b></i>", at The 13th International Conference on Principles and Practices of Programming on the Java Platform: Virtual Machines, Languages, and Tools, <a href="http://pppj16.inf.usi.ch/pppj" target="_blank">PPPJ'16</a>, Lugano, Switzerland, August 2016. [<a href="javascript: void(0);" onClick="toggle('p10')">abstract</a>, <a href="http://users.cecs.anu.edu.au/~steveb/downloads/pdf/ws-pppj-2016.pdf">paper</a>, <a href="./papers/slides_pppj16.pdf">slides</a>, <a href="./talk/pppj16.m4a" target="_blank"><img src="./sound.png" width="25" height="25" alt="Talk" /></a>]
 	<div id="p10" style="display:none;"><i><p> 
 	Processor design has turned toward parallelism and heterogeneous cores to achieve performance and energy efficiency. Developers find high-level languages attractive as they use abstraction to offer productivity and portability over these hardware complexities. Over the past few decades, researchers have developed increasingly advanced mechanisms to deliver performance despite the overheads naturally imposed by this abstraction. Recent work has demonstrated that such mechanisms can be exploited to attack overheads that arise in emerging high-level languages, which provide strong abstractions over parallelism. However, current implementation of existing popular high-level languages, such as Java, offer little by way of abstractions that allow the developer to achieve performance in the face of extensive hardware parallelism. 
