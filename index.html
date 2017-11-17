@@ -14,6 +14,20 @@
 
 </script>
 
+<!-- Copied from wikipedia: https://en.wikipedia.org/wiki/Blink_element#Implementation -->
+<script type="text/javascript">
+  (function() {
+    var blinks = document.getElementsByTagName('blink');
+    var visibility = 'hidden';
+    window.setInterval(function() {
+      for (var i = blinks.length - 1; i >= 0; i--) {
+        blinks[i].style.visibility = visibility;
+      }
+      visibility = (visibility === 'visible') ? 'hidden' : 'visible';
+    }, 250);
+  })();
+</script>
+
 <script type="text/javascript">
 function toggle(obj) {
 var obj=document.getElementById(obj);
@@ -107,6 +121,7 @@ Prior to joining Ph.D. program in March 2010, he worked for nearly 6 years in re
             <ul>
                 <li><p align="right"><span class="STYLE2">[2017]: 
 		<ul>
+		<li> <blink> <a href="#students"> Opening for a PhD student </a> </blink> </li>
                 <li> Excellence in Teaching award at IIITD for CSE502 in Spring 2017</li>
                 <li> Teaching Advanced Programming (CSE201) at IIITD in Fall 2017 </li>
                 <li> Paper in <a href="http://www.mcs.anl.gov/events/workshops/ashes/2017/index.php">AsHES 2017</a>  </li>
@@ -331,6 +346,10 @@ benchmarks on the Titan supercomputer. Our experiments show that AsyncSHMEM is c
 
 	<div class="contentText">
         <h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="students"> Students </a></span></h1>
+	<font color="red"> <p> <b> Current Openings </b> </p>
+	<p> I am looking for PhD students! If you are very good in programming and also like hacking big software systems then apply for the upcoming <a href="https://iiitd.ac.in/admission/phd/dec2017"> PhD admission round at IIIT-Delhi whose deadline is November 22, 2017</a>. The topic you need to choose is "Parallel Programming for Multicore Processors and Accelerators". 
+        </p> </font>
+
 	<p> <b> Current Students (IIITD) </b> </p>
 	<ul>
 	<li> Alind Khare (B.Tech. project): Exploration of speculative parallelization techniques in real applications</li>
@@ -510,25 +529,6 @@ benchmarks on the Titan supercomputer. Our experiments show that AsyncSHMEM is c
 	<br>
 	<br>
 	<br>
-
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=10560726; 
-var sc_invisible=0; 
-var sc_security="7d52c988"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="website
-statistics" href="http://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="http://c.statcounter.com/10560726/0/7d52c988/0/"
-alt="website statistics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-
 
 </body>
 </html>
