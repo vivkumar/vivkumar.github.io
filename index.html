@@ -119,51 +119,56 @@ Prior to joining Ph.D. program in March 2010, he worked for nearly 6 years in re
         <h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="news"> News </a></span></h1>
 	<div style="width:670px;height:150px;line-height:3em;overflow:auto;padding:5px;border:4px  double #DEBB07;">
             <ul>
-<!--
-                <li><p align="right"><span class="STYLE2">[2018]: 
+                <li>[2019]: 
 		<ul>
-		<li> Offering a new course on Blockchain Programming at IIITD in Fall 2018.
+		<li> Paper in EuroPar 2019 conference </li>
 		</ul>
-		</span></p></li>
--->
-                <li><p align="right"><span class="STYLE2">[2017]: 
+		</li>
+
+                <li>[2018]: 
 		<ul>
-		<!-- <li> <blink> <a href="#students"> Opening for a PhD student </a> </blink> </li> -->
+		<li> Excellence in Teaching award for CSE502 and CSE201 </li>
+		<li> Abhiprayah Tiwari successfully defended his M.Tech. thesis </li>
+		</ul>
+		</li>
+
+                <li>[2017]: 
+		<ul>
                 <li> Excellence in Teaching award at IIITD for CSE502 in Spring 2017</li>
                 <li> Teaching Advanced Programming (CSE201) at IIITD in Fall 2017 </li>
                 <li> Paper in <a href="http://www.mcs.anl.gov/events/workshops/ashes/2017/index.php">AsHES 2017</a>  </li>
 		<li> Thanks to Texas Instruments for donating EVMK2H development board. </li>
 		<li> Teaching a new course on parallel programming at IIITD in Spring 2017.
 		</ul>
-		</span></p></li>
+		</li>
 
-                <li><p align="right"><span class="STYLE2">[2016]: 
+                <li>[2016]: 
 		<ul>
 		 <li> In December 2016, joined <a href="https://iiitd.ac.in/">IIITD</a> as an Assistant Professor.</li>
 		 <li> Paper in <a href="http://www.csm.ornl.gov/workshops/openshmem2016/" target="_blank">OpenSHMEM 2016</a>, <a href="http://pppj16.inf.usi.ch/pppj" target="_blank">PPPJ 2016</a>, <a href="http://hpc.pnl.gov/IA3/IA3/Call_For_Papers.html"  target="_blank">IA^3</a> </li>
 		</ul>
-		</span></p></li>
+		</li>
 
-                <li><p align="right"><span class="STYLE2">[2015]: Paper in <a href="http://ieee-hpec.org/cfp.htm" target="_blank">HPEC 2015</a>, <a href="http://hpcl.seas.gwu.edu/pgas15/" target="_blank">PGAS 2015</a>
-		</span></p></li>
+                <li>[2015]: Paper in <a href="http://ieee-hpec.org/cfp.htm" target="_blank">HPEC 2015</a>, <a href="http://hpcl.seas.gwu.edu/pgas15/" target="_blank">PGAS 2015</a>
+		</li>
 
-                <li><p align="right"><span class="STYLE2">[2014]: 
+                <li>[2014]: 
 		<ul>
 		<li> In March 2014, joined Rice university as a Research Scientist </li>
 		<li> Submitted my PhD thesis </li>
 		<li> Paper in <a href="http://vee2014.cs.technion.ac.il/" target="_blank">VEE 2014</a>, <a href="http://nic.uoregon.edu/pgas14/index.php" target="_blank">PGAS 2014</a> </li>
 		</ul>
-		</span></p></li>
+		</li>
 
-                <li><p align="right"><span class="STYLE2">[2013]: 
+                <li>[2013]: 
 		<ul>
 		<li>OOPSLA 2012 <a href="#publications">paper</a> selected for <a href="http://www.sigplan.org/Newsletters/CACM/Papers" target="_blank">SIGPLAN Communications of ACM Research Highlights</a> </li> 
 		<li> PhD research accepted for Dissertation Research Showcase track at <a href="http://sc13.supercomputing.org/content/overview" target="_blank">SC 2013</a>. </li>
-		</span></p></li>
+		</li>
 		</ul>
 	
-		<li><p align="right"><span class="STYLE2">[2012]: Paper in OOPSLA 2012 </span></p></li>
-		<li><p align="right"><span class="STYLE2">[2010]: Joined PhD studies at ANU </span></p></li>
+		<li>[2012]: Paper in OOPSLA 2012 </li>
+		<li>[2010]: Joined PhD studies at ANU </li>
 
             </ul>
 	</div>
@@ -186,6 +191,16 @@ Prior to joining Ph.D. program in March 2010, he worked for nearly 6 years in re
 	<br>
 	<h1><span style="color: #78582E; padding-top:8px; font-size:18px; font-weight:bold; letter-spacing:-1px; "> Refereed Conferences / Workshops </span></h1>
 
+	<ul>
+	<li><p> V. Kumar, "<i><b>Featherlight Speculative Task Parallelism</b></i>", in 25th International European Conference on Parallel and Distributed Computing (EuroPar), Lecture Notes in Computer Science (LNCS), Springer, Göttingen, Germany, August 2019 (to appear). [<a href="javascript: void(0);" onClick="toggle('p13')">abstract</a>] 
+	<div id="p13" style="display:none;">
+	<i><p>
+	Speculative task parallelism is a widely used technique for solving search based irregular computations such as graph algorithms. Here, tasks are created speculatively to traverse different search spaces in parallel. Only a few of these tasks succeed in finding the solution, after which the remaining tasks are canceled. To ensure timely cancellation of tasks, existing frameworks either require programmer introduced cancellation checks inside every method in the call chain, thereby hurting the productivity, or provide limited parallel performance.
+	</p><p>
+	In this paper we propose Featherlight, a new programming model for speculative task parallelism that satisfies the serial elision property and doesn't require any task cancellation checks. We show that \mysys improves the productivity through a classroom based study. Further, to support Featherlight we present the design and implementation of a task cancellation technique that exploits runtime mechanisms already available within managed runtimes and achieves a geometric mean speedup of 1.6x over the popular Java Fork/Join framework on a 20 core machine.
+	</i></p></li>
+	</ul>
+	
 	<ul>
 	<li><p> M. Grossman, V. Kumar, N. Vrvilo, Z. Budimlic, and V. Sarkar, "<i><b>A Pluggable Framework for Composable HPC Scheduling Libraries</b></i>", in Proceedings of IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), ACM, Orlando, Florida, USA, May 2017. [<a href="javascript: void(0);" onClick="toggle('p12')">abstract</a>, <a href="./papers/ashes2017.pdf">paper</a>, <a href="./papers/ashes17-slides.pdf">slides</a>] 
 	<div id="p12" style="display:none;"><i><p>
@@ -361,27 +376,34 @@ benchmarks on the Titan supercomputer. Our experiments show that AsyncSHMEM is c
 
 	<p> <b> Current Students (IIITD) </b> </p>
 	<ul>
-	<li> Sai Kishore Pachigolla (B.Tech. project): JVM support for data race detection in async-finish program </li>
-	<!--li> Vibhor Gupta (B.Tech. project): Concurrent smart contracts in Ethereum </li-->
-	<li> Koustuv Kanungo (Ph.D candidate)
+	<li> Soumya Negi (B.Tech.): Developing Tasks-based Parallel Applications </li>
+	<li> Parimi Viraj (B.Tech.): HPC in Deep Learning Frameworks </li>
+	<li> Koustuv Kanungo (Ph.D candidate): Energy efficient HPC</li>
 	</ul>	
 	</p>
 
 	<p> <b> Past Students (IIITD) </b> </p>
 	<ul>
-	<li> Abhiprayah Tiwari (M.Tech. project, 2018): High Performance and Energy Optimal Parallel Programming on CPU and DSP based MPSoC</li>
-	<li> Vaibhav Pande (M.Tech project, 2017): Survey of parallel programming approaches in JavaScript and design of Google's V8 JavaScript engine </li>
-	<li> Alind Khare (B.Tech. project, 2017): Speculative parallelism based PageRank algorithm </li>
-	<li> Avadh Yadav and Burhan Nabi (B.Tech. project, 2017): Execution of VTK-m using HClib runtime</li>
+	<li> [2019] Abhijeet Singh (B.Tech.): Performance study of MiniFE Finite Element Mini-Application by using HClib </li>
+	<li> [2018] Sai Kishore Pachigolla (B.Tech.): JVM support for data race detection in async-finish program </li>
+	<li> [2018] Abhiprayah Tiwari (M.Tech.): High Performance and Energy Optimal Parallel Programming on CPU and DSP based MPSoC</li>
+	<li> [2017] Vaibhav Pande (M.Tech.): Survey of parallel programming approaches in JavaScript and design of Google's V8 JavaScript engine </li>
+	<li> [2017] Alind Khare (B.Tech.): Speculative parallelism based PageRank algorithm </li>
+	<li> [2017] Avadh Yadav and Burhan Nabi (B.Tech.): Execution of VTK-m using HClib runtime</li>
 	</ul>	
 	</p>
 
-	<p> <font color="red"> <b> Prospective Students: </b> I am looking for highly motivated Ph.D. students to work in the following areas of parallel programming models and runtime systems: a) heterogeneous processors and accelerators (SoCs, FPGAs, etc.), and b) managed language runtimes such as JVM and JavaScript engine. If you are very good in programming (C, C++, Java) and also like hacking big software systems then please do the following. </p>
+	<p> <font color="red"> <b> Prospective Students: </b> I am looking for highly motivated B.Tech, M.Tech, and Ph.D. students to work in the following areas of parallel programming models and runtime systems: a) heterogeneous processors and accelerators (SoCs, FPGAs, etc.), and b) managed language runtimes such as JVM and JavaScript engine. If you are very good in programming (C, C++, Java) and also like hacking big software systems then please email me your resume. </p>
+        <p> 
+<!--
+	<p> <font color="red"> <b> Prospective Students: </b> I am looking for highly motivated B.Tech, M.Tech, and Ph.D. students to work in the following areas of parallel programming models and runtime systems: a) heterogeneous processors and accelerators (SoCs, FPGAs, etc.), and b) managed language runtimes such as JVM and JavaScript engine. If you are very good in programming (C, C++, Java) and also like hacking big software systems then please do the following. </p>
         <p> 
         <ul>
         <li> First look at my research, publications and my student projects to get a sense of my research directions </li>
         <li> Mail me your resume </li>
-        </ul></font>
+        </ul>
+-->
+   	</font>
         <!--My projects tend to be programming intensive (C, C++, Java). -->
 <!--        All of my projects are under collaboration with industrial and academic partners. My current partners include IBM TJ Watson Research, Shell R&D and NCI Australia.
 -->
@@ -397,7 +419,7 @@ benchmarks on the Titan supercomputer. Our experiments show that AsyncSHMEM is c
         <div class="contentText"> 
 	<h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="awards"> Awards / Honors </a></span></h1>	
 	<ul>
-        <li> Excellence in Teaching award at IIITD for CSE502, September 2017</li>
+        <li> Excellence in Teaching award at IIITD for CSE502 and CSE201, 2017-2018</li>
 	<li> Ph.D. dissertation selected for <a href="http://sc13.supercomputing.org/schedule/event_detail.php-evid=drs111.html" target="_blank">Dissertation Showcase</a> track in <a href="http://sc13.supercomputing.org/index.html" target="_blank">SC13</a>,  November 2013. 
 	<li> Australian National University Miscellaneous Scholarship, October 2013. 
 	<li> <a href="http://dl.acm.org/citation.cfm?id=2384639" target="_blank">OOPSLA 2012 paper</a> selected for <a href="http://www.sigplan.org/Newsletters/CACM/Papers/" target="_blank">SIGPLAN Research Highlights</a>, May 2013.  
@@ -457,9 +479,9 @@ benchmarks on the Titan supercomputer. Our experiments show that AsyncSHMEM is c
 	<h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="services"> Professional Services </a></span></h1>
 	<p>  
 	<ul>
-		<li><p> Program Committee Member: <a href="http://respa15.rice.edu/" target="_blank">RESPA 2015</a>, <a href="http://x10-lang.org/workshop/workshop16.html" target="_blank">X10'16</a>, <a href="http://hpc.pnl.gov/IA3/IA3/Call_For_Papers.html" target="_blank">IA^3 2016</a>, <a href="http://hpc.pnl.gov/IA3/IA3/Call_For_Papers.html">IA^3 2017</a>, HiPC SRS 2017</p></li>
+		<li><p> Program Committee Member: <a href="https://hipc.org/" target="_blank">HiPC 2019</a>, <a href="https://conf.researchr.org/home/mplr-2019" target="_blank">MPLR 2019</a>, <a href="http://respa15.rice.edu/" target="_blank">RESPA 2015</a>, <a href="http://x10-lang.org/workshop/workshop16.html" target="_blank">X10'16</a>, <a href="http://hpc.pnl.gov/IA3/IA3/Call_For_Papers.html" target="_blank">IA^3 2016</a>, <a href="http://hpc.pnl.gov/IA3/IA3/Call_For_Papers.html">IA^3 2017</a>, HiPC SRS 2017-2018</p></li>
 		<li><p> Organizing Committee: <a href="http://respa15.rice.edu/" target="_blank">RESPA 2015</a> (publicity chair), <a href="http://conf.researchr.org/home/PPoPP-2017/" target="_blank">PPoPP 2017</a> (web chair)
-		<li><p>	Journal Reviewer: TACO, TOPC.</p></li>
+		<li><p>	Journal Reviewer: TACO, TOPC, TPDS, TOPLAS.</p></li>
 	</ul>
 	</p>
 	</div>
@@ -471,8 +493,8 @@ benchmarks on the Titan supercomputer. Our experiments show that AsyncSHMEM is c
 	<h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="photos"> Photos</a></span></h1>
 	<p> My students from the courses that I have taught at IIITD:
         <ul> 
-	<li>Foundations of Parallel Programming: <a href="./images/fpp_2017.jpg" target="_blank">2017</a>, <a href="./images/fpp_2018.jpg" target="_blank">2018</a> </li>
-        <li>Advanced Programming: <a href="./images/ap_2017.jpg" target="_blank">2017</a> </li>
+	<li>Foundations of Parallel Programming: <a href="./images/fpp_2017.jpg" target="_blank">2017</a>, <a href="./images/fpp_2018.jpg" target="_blank">2018</a>, <a href="./images/fpp_2019.jpg" target="_blank">2019</a> </li>
+        <li>Advanced Programming: <a href="./images/ap_2017.jpg" target="_blank">2017</a>, <a href="./images/ap_2018.jpg" target="_blank">2018</a> </li>
         </ul>
 	</p>
 	</div>
@@ -498,9 +520,7 @@ benchmarks on the Titan supercomputer. Our experiments show that AsyncSHMEM is c
         <div class="contentText"> 
 	<h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="contact"> Contact </a></span></h1>
 	<p> 
-	Room No. B-515, New Academic Building, 5th Floor,
-	<br> Okhla Phase-III,
-	<br> Near Govindpuri Metro Station, New Delhi-110020, India 
+	Room No. B-506, R&D Block, 5th Floor, IIIT Delhi, Near Okhla Phase 3, New Delhi-110020, India 
 	<br> E-mail: vivekk @ iiitd.ac.in
 	</p>
 	<a href="http://www.linkedin.com/pub/vivek-kumar/21/4b1/42a" target="_blank">
