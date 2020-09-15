@@ -119,6 +119,13 @@ Prior to joining Ph.D. program in March 2010, he worked for nearly 6 years in re
         <h1><span style="color: #9f8060; padding-top:8px; font-size:21px; font-weight:bold; letter-spacing:-1px; "><a name="news"> News </a></span></h1>
 	<div style="width:670px;height:150px;line-height:3em;overflow:auto;padding:5px;border:4px  double #DEBB07;">
             <ul>
+                <li>[2020]: 
+		<ul>
+		<li> Paper in HiPC'20 </li>
+		<li> Excellence in Teaching award for CSE502</li>
+		</ul>
+		</li>
+
                 <li>[2019]: 
 		<ul>
 		<li> Paper in EuroPar'19 </li>
@@ -194,6 +201,16 @@ Prior to joining Ph.D. program in March 2010, he worked for nearly 6 years in re
 	<br>
 	<h1><span style="color: #78582E; padding-top:8px; font-size:18px; font-weight:bold; letter-spacing:-1px; "> Refereed Conferences / Workshops </span></h1>
 
+	<ul>
+	<li><p>[<b>HiPC 2020</b>]: V. Kumar, "<i><b>PufferFish: NUMA-Aware Work-stealing Library using Elastic Tasks</b></i>", in 27th IEEE International Conference on High Performance Computing, Data, and Analytics, Pune, India, December 2020 (to appear). [<a href="javascript: void(0);" onClick="toggle('p15')">abstract</a>] 
+	<div id="p15" style="display:none;">
+	<i><p>
+	Due to the challenges in providing adequate memory access to many cores on a single processor, Multi-Die and Multi-Socket based multicore systems are becoming mainstream. These systems offer cache-coherent Non-Uniform Memory Access (NUMA) across several memory banks and cache hierarchy to increase memory capacity and bandwidth. Random work-stealing is a widely used technique for dynamic load balancing of tasks on multicore processors. However, it scales poorly on such NUMA systems for memory-bound applications due to cache misses and remote memory access latency. Hierarchical Place Tree (HPT) is a popular approach for improving the locality of a task-based parallel programming model, albeit it requires the programmer to map the dynamically unfolding tasks over a NUMA system evenly. Specifying data-affinity hints provides a more natural way to map the tasks than HPT. Still, a scalable work-stealing implementation for the same is mostly unexplored for modern NUMA systems.
+	</p><p>
+	This paper presents PufferFish, a new async–finish parallel programming model and work-stealing runtime for NUMA systems that provide a close coupling of the data- affinity hints provided for an asynchronous task with the HPTs in Habanero C/C++ library (HClib). PufferFish introduces Hierarchical Elastic Tasks (HET) that improves the locality by shrinking itself to run on a single worker inside a place or puffing up across multiple workers depending on the work imbalance at a particular place in an HPT. We use a set of widely used memory-bound benchmarks exhibiting regular and irregular execution graphs for evaluating PufferFish. On these benchmarks, we show that PufferFish achieves a geometric mean speedup of 1.5× and 1.9× over HPT implementation in HClib and random work-stealing in CilkPlus, respectively, on a 32-core NUMA AMD EPYC processor.
+	</i></p></li>
+	</ul>
+	
 	<ul>
 	<li><p>[<b>IWOMP 2019</b>]: V. Kumar, A. Tiwari, and G. Mitra, "<i><b>HetroOMP: OpenMP for Hybrid Load Balancing Across Heterogeneous Processors</b></i>", in 15th International Workshop on OpenMP, Lecture Notes in Computer Science (LNCS), Springer, Auckland, New Zealand, September 2019. [<a href="javascript: void(0);" onClick="toggle('p14')">abstract</a>, <a href="./papers/IWOMP2019.pdf">paper</a>, <a href="./papers/IWOMP2019_slides.pdf">slides</a>] 
 	<div id="p14" style="display:none;">
